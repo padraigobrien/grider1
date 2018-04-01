@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,12 @@
   },
   "homepage": "https://github.com/padraigobrien/grider1#readme",
   "dependencies": {
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.3",
     "mongoose": "^5.0.11",
+    "nodemon": "^1.17.2",
     "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
     "passport-oauth2": "^1.4.0"
   }
 }
