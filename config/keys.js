@@ -1,6 +1,8 @@
-module.exports = {
-    googleClientID :'657571191199-na8j465nase6n9a7itlq8nffv18mevjt.apps.googleusercontent.com',
-    googleClientSecret: 'SBLcfl-OMQDSm-AUJU6rmbTH',
-    mongoURI : 'mongodb://podge:mand3lla@ds123799.mlab.com:23799/emaily-podge-dev',
-    cookieKey : 'sowerjqfsodjvdwjosjiofjioqiojiojgksjqweopdfslkvnsdlc'
+// figure out what set of credentials to return
+if (process.env.NODE_ENV ==='production'){
+    //in prod
+    module.exports = require('./prod');
+} else {
+    //in dev
+    module.exports = require('./dev');
 }
